@@ -2,6 +2,7 @@
 # Dependencies 
 1. Docker
 2. Npm 
+3. .env(not included here)
 
 # Instructions
 
