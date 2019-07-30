@@ -8,8 +8,8 @@
 
 1. Clone Repo ``` git clone https://github.com/olsenme/AirbnbAPI.git```
 2. Install dependencies ```npm install```
-3. Start up the API ```docker-compose up api```
-4. Start up mySql and Mongo DB ```docker-compose up mongo mysql```
+3. Start up mySql and Mongo DB ```docker-compose up mongo mysql``` 
+4. Start up the API ```docker-compose up api```
 5. Send appropriate queries (using cURL, Postman, etc.) to ```http://localhost:8003/```
 
 # Dicussion
