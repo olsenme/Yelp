@@ -1,5 +1,5 @@
 # Airbnb-Like-API
-#Dependencies 
+# Dependencies 
 1. Docker
 2. Npm 
 # Instructions
