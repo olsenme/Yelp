@@ -10,7 +10,7 @@
 2. Install dependencies ```npm install```
 3. Start up the API ```docker-compose up api```
 4. Start up mySql and Mongo DB ```docker-compose up mongo mysql```
-5. Send appropriate queries (using cURL, Postman, etc.) to ```http://localhost:3000/```
+5. Send appropriate queries (using cURL, Postman, etc.) to ```http://localhost:8003/```
 
 # Dicussion
 I used NodeJS,mySql,mongoDB,Docker,and JWT to build this API.
