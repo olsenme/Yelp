@@ -33,7 +33,6 @@ function generateUserIDQuery(userID) {
     return { userID: userID };
   }
 }
-
 function getUserByID(userID, mongoDB, includePassword) {
   const usersCollection = mongoDB.collection('users');
   const query = generateUserIDQuery(userID);
@@ -47,10 +46,30 @@ function getUserByID(userID, mongoDB, includePassword) {
     });
 }
 /*Test endpoint*/
-router.get('/:userID', requireAuthentication, function (req, res, next) {
+router.get('/', function(req,res,next){
+  const mongoDB = req.app.locals.mongoDB;
+  const collection = mongoDB.collection('users');
+  const cursor = collection.find();
+
+  cursor.toArray((err,results)=>{
+    if(err){
+         res.status(500).json({
+            error: "Error fetching businesses list.  Please try again later."
+          });
+        }
+    else{
+        res.status(200).json({
+            users:results
+          });
+    }
+});
+});
+router.get('/:userID', requireAuthentication,function (req, res, next) {
+
   if(req.user !== req.params.userID){
     res.status(403).json({
-      error: "Unauthorized to access that resource"
+      error: "Unauthorized to access that resource",
+      user:req.params.userID
 });
 }
 else

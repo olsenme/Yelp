@@ -20,7 +20,8 @@ const mongoDBName = process.env.MONGO_INITDB_DATABASE;
 const mongoUser = process.env.MONGODB_USERNAME;
 const mongoPassword = process.env.MONGODB_PASSWORD;
 const mongoURL = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`
-console.log("== Mongo URL:", mongoURL);
+
+
 
 const maxMySQLConnections = 10;
 app.locals.mysqlPool = mysql.createPool({
@@ -37,6 +38,7 @@ app.use(morgan('dev'));
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
+
 
 /*
  * All routes for the API are written in modules in the api/ directory.  The
