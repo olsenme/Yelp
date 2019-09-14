@@ -6,7 +6,7 @@
 
 # Instructions
 
-1. Clone Repo ``` git clone https://github.com/olsenme/AirbnbAPI.git```
+1. Clone Repo ``` git clone https://github.com/olsenme/Yelp.git```
 2. Install dependencies ```npm install```
 3. Start up mySql and Mongo DB ```docker-compose up mongo mysql``` 
 4. Start up the API ```docker-compose up api```
