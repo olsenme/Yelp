@@ -1,4 +1,4 @@
-# Airbnb-Like-API
+# Yelp-Like-API
 # Dependencies 
 1. Docker
 2. Npm 
