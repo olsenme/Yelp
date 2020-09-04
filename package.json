@@ -23,7 +23,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.2",
-    "mongodb": "^3.1.0-beta4",
+    "mongodb": "^3.1.13",
     "morgan": "^1.9.1",
     "mysql": "^2.15.0"
   },
