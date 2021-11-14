@@ -110,7 +110,7 @@ I used NodeJS,mySql,mongoDB,Docker,and JWT to build this API.
       <li>Email Address</li>
       <li>Hashed/salted password</li>
     </ul>
-    <li>Official Mongo Docker Image will be used to power MySQL database.</li>
+    <li>Official Mongo Docker Image will be used to power MongoDb database.</li>
     <li>Script will be written to create a low-privileged user to use to connect to MongoDB server from Node.js.</li>
     <li>Three container application will be created and run via Docker Compose. </li>
   </ul>
